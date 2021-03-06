@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <meta charset="utf-8">
+        
+        <title>Travel Website</title>
+      </head>
+
+      <body>
+          
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1 >Travel the <i>(virtual)</i> Globe</h1>
+              <p style= "font-size: 25px;">Why let COVID stop you from having an adventure?</p>
+              <button><a href="Explorepage.html"  class="Explorepage">Explore now</a></button>
+            </div>
+          </div>
+
+          <div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Home</a>
+                  <a href="#">Asia</a>
+                  <a href="#">Europe</a>
+                  <a href="#">North America</a>
+                  <a href="#">South America</a>
+                  <a href="#">Africa</a>
+                  <a href="#">Oceania</a>
+                </div>
+              </div>
+            
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; Menu </span>
+            
+            <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+            </script>
+
+<aside>
+    <p>Maybe you had a flight booked to Canada, or Spain, or Rome, or Japan or a whole tour of Europe? Maybe you were meant to spend your Christmas break at your relative's house in the US? But instead, all those exciting ventures got cancelled and now you're bored out of your mind at home, sulking about where you could have been visiting instead. Well, you found the right place. <br><br>
+      <b>Our website provides insights to all your favourite countries, with photos of tourist attractions, descriptions, history and more.</b> 
+      <br><br> It will transport you to a place of your desire and make you feel like you're not missing out on anything at all. You can browse the most popular countries from each continent of the world (excluding Antarctica).</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+</aside>
+
+  <img class="mySlides" src="https://content.thriveglobal.com/wp-content/uploads/2019/01/GettyImages-955441104.jpg">
+<img class="mySlides" src="https://cdn.britannica.com/36/162636-050-932C5D49/Colosseum-Rome-Italy.jpg">
+<img class="mySlides" src="https://www.thoughtco.com/thmb/bdsrNvjDuYQAsv7YzVN2JzhfEmg=/3149x2362/smart/filters:no_upscale()/inigoarza-5c72cffe46e0fb0001b68224.jpg">
+<img class="mySlides" src="https://i.guim.co.uk/img/media/4a29dde46c17e8a07f98e4e5947d49964d074923/0_348_6000_3600/master/6000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88c75e6319ec9d3588bb6e17ae92ff68">
+
+
+<script>
+  var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+  </script>
+
+  <br>
+  <br>
+  
+
+  <footer><p>You can also try a fun <a href="https://www.sporcle.com/games/g/world" style="color:snow">"Countries of the world quiz"</a> on Sporcle.com to help test your knowledge on the countries you will explore.</p></footer>
+
+      </body>
+      <style>
+body {
+    background-color: lightslategray;
+}
+
+body, html {
+    height: 100%;}
+
+h1 {
+  text-align: center;
+  color:white;
+  font-size: 66px;
+}
+.mySlides {
+  opacity:0.5; 
+  width:1000px; 
+  height: 600px;
+  }
+b {font-style: normal;}
+
+  aside {
+  width: 350px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  text-align: center;
+  background-color:rgb(145, 162, 179);
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color:slategray;
+}
+footer {
+  background-color:#97904f;
+  padding:50px;
+  text-align: center;
+  font-size: 20px;
+}
+.hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.nationsonline.org/maps/Political-World-Map-3360.jpg");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+      
+      .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+      }
+      
+      .hero-text button:hover {
+        background-color: #555;
+        color: white;
+      }
+      
+      .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+         }
+
+         .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+         }
+
+         .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+         }
+         .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+}
+
+         .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+         }
+
+         
+        .overlay a {font-size: 20px;}
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+
+        .overflow {
+  background: slategray;
+  padding: 15px;
+  float: right;
+  width: 350px;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+      </style>
+</html>
